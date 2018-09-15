@@ -1,0 +1,83 @@
+<div class="">
+
+  <div class="container py-5">
+    <h3 class="display-4">Explore unexplored</h3>
+    <p class="lead text-muted">
+      Asian Tours addresses a long felt need to cater to the aspirations of adventure and nature buffs and has thus put
+      together adventures and expeditions for adventure travelers of all inclinations and every budget, bringing on
+      board alliances with India's leading adventure tour operators certified with the most powerful certification tool
+      ever created for the outdoors the AN-360, which only certifies top- safety, top-eco-sustainability, top-quality,
+      and is the last word in reliability
+    </p>
+  </div>
+
+
+  <div class="title p-5 bg-info border-top skew">
+    <div class="container text-white">
+      <h2 class="pb-4">Explore our customised packages</h2>
+    </div>
+  </div>
+
+
+  <div class="container mt-6-" id="packages">
+    <div class="row mt-4">
+      <div class="col-md-3 col-sm-6 col-12 pb-4" *ngFor="let package of packages">
+        <div class="card">
+          <img class="card-img-top" [src]="package.imgURL" height="120px">
+          <div class="card-body">
+            <h5 class="card-title">{{package.type}}</h5>
+            <p class="card-text">{{package.description}}</p>
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-success" type="button" routerLink="/tour-list">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="title p-5 bg-danger border-top skew">
+    <div class="container text-white">
+      <h2 class="pb-4">Adveture Trips</h2>
+    </div>
+  </div>
+  <div class="container mt-6-">
+    <div class="row mt-4">
+      <div class="col-md-3 col-sm-6 col-12 pb-4" *ngFor="let package of adventureTours">
+        <div class="card">
+          <img class="card-img-top" [src]="package.imgURL" height="120px">
+          <div class="card-body">
+            <h5 class="card-title">{{package.title}}</h5>
+            <p class="card-text">{{package.description || "Description" }}</p>
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-success" type="button" routerLink="/tour-list">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="title p-5 bg-success border-top skew">
+    <div class="container text-white">
+      <h2 class="pb-4">For Nature lovers</h2>
+    </div>
+  </div>
+  <div class="container mt-6-">
+    <div class="row mt-4">
+      <div class="col-md-3 col-sm-6 col-12 pb-4" *ngFor="let package of natureTours">
+        <div class="card">
+          <img class="card-img-top" [src]="package.imgURL" height="120px">
+          <div class="card-body">
+            <h5 class="card-title">{{package.title}}</h5>
+            <p class="card-text">{{package.description || "Description" }}</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-success" type="button" routerLink="/tour-list">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

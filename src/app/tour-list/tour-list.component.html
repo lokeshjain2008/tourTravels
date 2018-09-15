@@ -1,0 +1,37 @@
+<div class="container mt-4">
+  <div class="horizontal-card my-4" *ngFor="let tour of tourList">
+    <div class="card">
+      <div class="row ">
+        <div class="col-md-3">
+            <img [src]="tour.imgeURL" class="w-100" style="height: 160px">
+          </div>
+          <div class="col-md-6 px-3">
+            <div class="card-block p-2">
+              <h4 class="card-title">{{tour.title}}</h4>
+              <span class="badge badge-success">{{tour.timeDuration}}</span>
+              <p class="card-text tex-info">{{tour.description}}</p>
+              <p class="text-muted">
+                Included:
+                <span class="fa fa-car mr-2 text-info"></span>
+                <span class="fa fa-plane mx-2 text-info"></span>
+                <span class="fa fa-hotel mx-2 text-info"></span>
+                <span class="fa fa-binoculars mx-2 text-info"></span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" >
+            <div class="card-block bg-light justify-content-sm-center d-flex flex-column w-100 h-100 align-items-center border-left-dark" >
+              <h3>{{tour.price}}$</h3>
+              <p class="text-muted">
+                per person on twin sharing
+              </p>
+              <a data-toggle="modal" data-target="#app-welcome-user" class="btn btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<div class="pt-4"></div>

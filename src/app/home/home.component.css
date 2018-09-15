@@ -1,0 +1,6 @@
+.mt-6-{
+  margin-top: -60px;
+}
+.skew{
+  transform: skewY(-0.5deg);
+}
