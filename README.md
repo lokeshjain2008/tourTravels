@@ -1,6 +1,6 @@
 # TourGuide
 
-POC for the project [Link](asian-tour.surge.sh).
+POC for the project [Link](http://asian-tour.surge.sh/home#packages).
 
 ## About the project
 
@@ -17,4 +17,4 @@ This project is using following technologies to create a POC
 - Popper.js
 
 ## Location
-surge --domain asian-tour.surge.sh
+surge --domain http://asian-tour.surge.sh/home#packages
